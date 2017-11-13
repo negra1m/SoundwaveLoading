@@ -1,0 +1,66 @@
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  background-color: #666;
+}
+
+.flex-container>div {
+  background-color: #f1f1f1;
+  width: 30px;
+  margin: 10px;
+  text-align: center;
+  line-height: 150px;
+  font-size: 30px;
+  color: #f1f1f1;
+  user-select: none;
+  transform-origin: 0% 0%
+}
+@keyframes loading {
+0%   {top: 0px;}
+    25%  {top: 200px;}
+    75%  {top: 50px;}
+    100% {top: 100px;}
+    from {
+      height: 0%;
+    }
+    to {
+      height: 80%
+    }
+}
+
+.test {
+  animation-duration: 1s;
+  animation-name: loading;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background-color: #f1f1f1;
+}
+.test1 {
+  animation-duration: 1.5s;
+  animation-name: loading;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<tmp class="flex-container">
+  <div class="test1"></div>
+  <div class="test"></div>
+  <div class="test1"></div>
+  <div class="test"></div>
+  <div class="test1"></div>  
+  <div class="test"></div>  
+  <div class="test1"></div>
+</tmp>
+</body>
+</html>
+
+</html>
